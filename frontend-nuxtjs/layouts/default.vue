@@ -10,20 +10,20 @@
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
             <b-nav-item to="/post">POST</b-nav-item>
-            <b-nav-item href="https://github.com/rendiputra">github</b-nav-item>
+            <b-nav-item href="https://github.com/rendiputra">Github</b-nav-item>
             <b-nav-item href="https://github.com/rendiputra/LaravelApi-X-NuxtJS">Source code lengkap</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
     </div>
 
-    <Nuxt/>
+    <Nuxt />
   </div>
 </template>
 
-<style scoped>
+<style>
 body{
-  background-color: lightgray;
+  background-color: skyblue;
 }
 .mt-5 {
   margin-top: 100px!important;
