@@ -6,7 +6,11 @@
             <h5>Data Posts</h5>
             <hr>
             <b-button :to="{name: 'post-create'}" variant="primary" class="mb-3">Tambah</b-button>
-            <b-table striped bordered hover :items="posts" :fields="fields" show-empty></b-table>
+            <b-table striped bordered hover :items="posts" :fields="fields" show-empty>
+              <template v-slot:cell(actions)="row">
+                <b-button :to="{name: 'post-edit-id', params: {id: row.item.id}}" variant="warning" size="sm">Edit</b-button>
+              </template>
+            </b-table>
           </b-card>
         </b-col>
     </b-row>
